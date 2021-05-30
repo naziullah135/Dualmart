@@ -110,11 +110,14 @@ const initState =  {
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aspernatur, quo nostrum natus dolor obcaecati reprehenderit reiciendis, repellat omnis voluptates et, dolorem maxime iure sapiente laboriosam quia! Aliquam, vel soluta?",
 
         }
-    ]
+    ],
+    product: {}
 }
 
 const ProductsReducer = (state = initState, action) => {
     switch (action.type) {
+        case "PRODUCT":
+            return {...state, product: state.products.find(product=> product.id === parseInt(action.id))}
        default:
            return state;
     }
