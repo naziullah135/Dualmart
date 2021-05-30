@@ -18,7 +18,7 @@ const decQuantity = () => {
     }
 }
     return (
-      <div className="container details-sec">
+      <div className="container details-sec mb-4">
          <div className="row">
          <div className="col-md-6">
             <div className="details-img">
