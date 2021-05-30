@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const ProductCard = () => {
     const {products} = useSelector(state => state.ProductsReducer);
     return (
-        <div className="container">
+        <div className="container mb-5">
             <div className="row">
                 {products.map(product =>(
                     <div className="col-md-4 col-sm-6 mt-4" key={product.key}>
