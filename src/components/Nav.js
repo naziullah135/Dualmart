@@ -8,11 +8,11 @@ const Nav = () => {
     return (
         <div className="nav">
             <div className="container">
-                <div className="nav__container">
-                    <div className="nav__left">
+                <div className="nav-container">
+                    <div className="nav-left">
                         <Link to="/"><img src={logo} alt="logo"/></Link>
                     </div>
-                    <div className="nav__right">
+                    <div className="nav-right">
                         <Link to="/cart">
                             <div className="basket">
                              <BsFillBagFill className="cart-icon" /><span>{totalQuantities}</span>
