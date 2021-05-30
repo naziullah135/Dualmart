@@ -1,24 +1,26 @@
-import React from 'react';
-
+import React from 'react'
+import {Link} from "react-router-dom";
+import logo from '../images/logo.jpg';
+import { BsFillBagFill } from "react-icons/bs";
 const Nav = () => {
     return (
-       <div>
-           <ul class="nav justify-content-end">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">About</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Shop</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Contact</a>
-  </li>
-</ul>
-       </div>
-    );
-};
+        <div className="nav">
+            <div className="container">
+                <div className="nav__container">
+                    <div className="nav__left">
+                        <Link to="/"><img src={logo} alt="logo"/></Link>
+                    </div>
+                    <div className="nav__right">
+                        <Link to="/cart">
+                            <div className="basket">
+                             <BsFillBagFill className="cart-icon" /><span>4</span>
+                            </div>
+                        </Link>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
 
-export default Nav;
+export default Nav
