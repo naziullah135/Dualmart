@@ -17,11 +17,11 @@ const ProductCard = () => {
                             <div className="product-name">
                                 {product.name}
                             </div>
-                            <div className="d-flex">
+                            <div className="d-flex justify-content-between">
                                 <div className="product-price">
                                 <span className="actualPrice">{currencyFormatter.format(product.price, { code: 'USD' })}</span> <span className="discount">{product.discount}%</span>
                                 </div>
-                                <div className="product-discount-price d-flex justify-content-end">
+                                <div className="product-discount-price">
                                 <span>{currencyFormatter.format(product.discountPrice, { code: 'USD' })}</span>
                                 </div>
                             </div>
